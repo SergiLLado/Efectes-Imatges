@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectes CSS en Imàtges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            transition: all 0.6s ease;
+        }
+
+
+
+        .zoom:hover {
+            transform: scale(1.2);
+        }
+
+        .desenfoque:hover {
+            filter: blur(5px);
+        }
+
+        .escala-grises:hover {
+            filter: grayscale(100%);
+        }
+
+        .sepia:hover {
+            filter: sepia(80%);
+        }
+
+        .saturacion:hover {
+            filter: saturate(3);
+        }
+
+        .transparencia:hover {
+            opacity: 0.6;
+        }
+
+        .cambio-tamano:hover {
+            transform: scale(1.5) rotate(10deg);
+        }
+
+        .rotacion-completa:hover {
+            transform: rotate(360deg);
+        }
+
+        .rotacion-3d:hover {
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+        }
+
+        .combinado:hover {
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px 15px #ec731e;
+            transform: rotate(360deg);
+        }
+
+
+
+        .invertir:hover {
+            filter: invert(100%);
+            transform: scale(1.2);
+        }
+
+        .parpadeo:hover {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Efectes CSS en Imàtges</h1>
+
+    <div class="image-container">
+        <img class="zoom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Zoom">
+    </div>
+    <div class="image-container">
+        <img class="desenfoque" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Desenfoque">
+    </div>
+    <div class="image-container">
+        <img class="escala-grises" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Escala de grises">
+    </div>
+    <div class="image-container">
+        <img class="sepia" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Sepia">
+    </div>
+    <div class="image-container">
+        <img class="saturacion" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Saturación">
+    </div>
+    <div class="image-container">
+        <img class="transparencia" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Transparencia">
+    </div>
+    <div class="image-container">
+        <img class="cambio-tamano" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Cambio de tamaño">
+    </div>
+    <div class="image-container">
+        <img class="rotacion-completa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Rotación completa">
+    </div>
+    <div class="image-container">
+        <img class="rotacion-3d" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Rotación 3D">
+    </div>
+    <div class="image-container">
+        <img class="combinado" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Combinación de efectos">
+    </div>
+    <div class="image-container">
+        <img class="invertir" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Invertir colores">
+    </div>
+    <div class="image-container">
+        <img class="parpadeo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyH4t2Qp3zQPJtiVnVW8ntQFlaiojhR0fvvA&s" alt="Parpadeo">
+    </div>
+</body>
+</html>
+
